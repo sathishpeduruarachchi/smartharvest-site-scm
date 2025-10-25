@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Process — SmartHarvest</title>
+  <meta name="description" content="SmartHarvest - Farm-to-Market AI-Enhanced Supply Chain Process" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .flow-diagram {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .flow-step {
+      background-color: var(--card-bg, #f7f7f7);
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1rem 1.2rem;
+      text-align: center;
+      flex: 1 1 150px;
+      min-width: 160px;
+      transition: transform 0.3s ease;
+    }
+    .flow-step:hover { transform: translateY(-5px); }
+    .flow-arrow {
+      font-size: 1.5rem;
+      color: var(--accent, #11698E);
+      font-weight: bold;
+    }
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      align-items: center;
+      margin-top: 1rem;
+      font-weight: 500;
+    }
+    .legend span { display: flex; align-items: center; gap: .4rem; }
+    .dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .dot.local { background-color: #3EB489; }
+    .dot.export { background-color: #8E44AD; }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo"></div>
+        <div class="title">SmartHarvest</div>
+      </div>
+      <button id="menuToggle" class="menu-toggle" aria-label="Open Menu">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="vision.html">Vision</a>
+        <a href="mission.html">Mission</a>
+        <a href="scope.html">Scope</a>
+        <a href="objectives.html">Objectives</a>
+        <a href="components.html">Components</a>
+        <a href="process.html" class="active">Process</a>
+        <a href="trust.html">Trust</a>
+        <a href="contact.html">Contact</a>
+        <a href="team.html">Team</a>
+      </div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <section class="section">
+      <h1>🌾 Process — Farm to Market</h1>
+      <p class="muted">
+        The SmartHarvest process represents the <strong>end-to-end flow</strong> of agricultural intelligence — from farm-level data collection to local retail and global export.
+        Every phase is powered by integrated AI, IoT, and blockchain technologies working together to build a transparent, resilient, and sustainable agricultural supply chain.
+      </p>
+    </section>
+
+    <!-- Flow Diagram -->
+    <div class="flow-diagram">
+      <div class="flow-step">Harvest<br>📊 Data Acquisition</div>
+      <div class="flow-arrow">➡</div>
+      <div class="flow-step">🔍 Quality<br>Inspection</div>
+      <div class="flow-arrow">➡</div>
+      <div class="flow-step">🏭 Smart<br>Storage</div>
+      <div class="flow-arrow">➡</div>
+      <div class="flow-step">🚚 AI<br>Logistics</div>
+      <div class="flow-arrow">➡</div>
+      <div class="flow-step">🛒 Retail &<br>Export</div>
+      <div class="flow-arrow">➡</div>
+      <div class="flow-step">♻️ Feedback &<br>Optimization</div>
+    </div>
+
+    <div class="legend">
+      <span><span class="dot local"></span> Local</span>
+      <span><span class="dot export"></span> Export</span>
+    </div>
+
+    <section class="section">
+      <h2>1. Harvest & Data Acquisition</h2>
+      <p class="muted">
+        The process begins at the <strong>farm level</strong>, where data fuels every intelligent decision.
+        Smart IoT devices and field sensors capture soil moisture, temperature, humidity, and crop maturity in real time.
+        Farmers use mobile dashboards to log <strong>harvest data</strong>, including batch IDs, timestamps, and geolocation.
+      </p>
+      <p class="muted">
+        The <strong>AI Forecasting Engine</strong> analyzes yield volumes, local demand, and historical market behavior to generate post-harvest guidance.
+        Farmers receive instant insights on <strong>when and where to sell</strong> — ensuring equitable pricing and market alignment.
+      </p>
+      <p class="muted">
+        For export-bound batches <span class="dot export"></span>, compliance data (pesticide use, harvest date, certification) is securely recorded on a <strong>blockchain ledger</strong> for traceability.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>2. Post-Harvest Handling & Quality Inspection</h2>
+      <p class="muted">
+        After harvesting, produce enters the <strong>AI Quality Control pipeline</strong>.
+        <strong>Computer vision systems</strong> powered by CNN models (YOLOv8, ResNet-50, and custom lightweight architectures)
+        assess produce for ripeness, defects, and freshness with confidence scoring for validation.
+      </p>
+      <ul class="list muted">
+        <li>Products are categorized as <strong>fresh, unripe, or rejected</strong> with digital precision.</li>
+        <li>Accepted batches proceed to packaging stations for <span class="dot local"></span> local or <span class="dot export"></span> export allocation.</li>
+        <li>Quality results are logged into the <strong>digital chain-of-custody ledger</strong> to ensure transparency.</li>
+      </ul>
+      <p class="muted">
+        This phase guarantees <strong>consistency, fairness, and compliance</strong>, reducing export rejection rates and ensuring credibility with buyers.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>3. Smart Storage & Real-Time Environmental Control</h2>
+      <p class="muted">
+        The <strong>Real-Time Decision Support System (RTDSS)</strong> governs storage and transport environments.
+        IoT sensors continuously track <strong>temperature, humidity, CO₂, and light intensity</strong>, while ML algorithms detect deviations.
+      </p>
+      <ul class="list muted">
+        <li>Automated controls adjust cooling and ventilation dynamically.</li>
+        <li>Alerts are sent to managers via dashboards for instant corrective action.</li>
+        <li>Historical data feeds back into AI models to improve predictive accuracy.</li>
+      </ul>
+      <p class="muted">
+        This feedback-driven storage system preserves <strong>freshness, quality, and compliance</strong> with both local and international standards.
+      </p>
+      <p class="muted"><em>IT21804274 — Logistics Optimization</em></p>
+    </section>
+
+    <section class="section">
+      <h2>4. AI-Driven Logistics & Distribution</h2>
+      <p class="muted">
+        Once products are ready for dispatch, <strong>AI Logistics Optimization</strong> modules plan routes and fleet allocation using
+        <strong>Reinforcement Learning (RL)</strong> and predictive analytics.
+      </p>
+      <ul class="list muted">
+        <li><span class="dot local"></span> Local routes prioritize freshness and minimal handling to nearby distributors.</li>
+        <li><span class="dot export"></span> Export consignments are directed to ports and airports under <strong>cold-chain conditions</strong>.</li>
+        <li>Dynamic routing minimizes fuel use, travel time, and carbon emissions.</li>
+      </ul>
+      <p class="muted">
+        Logistics evolves from static scheduling to an <strong>adaptive, data-optimized operation</strong>, ensuring reliable, on-time deliveries across all markets.
+      </p>
+      <p class="muted"><em>IT21839160 — AI-Based Quality Control</em></p>
+    </section>
+
+    <section class="section">
+      <h2>5. Retail & Export Distribution</h2>
+      <p class="muted">
+        On arrival, <strong>traceability and transparency</strong> remain intact.
+        Retailers and exporters verify product origin, quality scores, and environmental history through blockchain-based digital records.
+      </p>
+      <ul class="list muted">
+        <li><span class="dot export"></span> Export buyers validate authenticity and safety standards through digital certificates.</li>
+        <li><span class="dot local"></span> Local markets use AI-powered <strong>dynamic pricing</strong> to balance demand and freshness.</li>
+        <li>Every stakeholder gains confidence through verifiable, end-to-end traceability.</li>
+      </ul>
+      <p class="muted">
+        This phase completes the <strong>AI-SCM lifecycle</strong>, where technology reinforces trust and efficiency at the last mile.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>6. Feedback & Continuous Optimization</h2>
+      <p class="muted">
+        In the final phase, data collected from all stages — harvest, inspection, logistics, and distribution —
+        is fed into a central <strong>data lake</strong> for continuous learning.
+      </p>
+      <ul class="list muted">
+        <li>ML models retrain using real-world performance data to enhance accuracy.</li>
+        <li>System feedback improves forecasting, routing, and grading algorithms.</li>
+        <li>Each cycle becomes more efficient, predictive, and sustainable over time.</li>
+      </ul>
+      <p class="muted">
+        This self-learning architecture turns SmartHarvest into a <strong>living, evolving ecosystem</strong> that continuously improves agricultural productivity and sustainability.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Conclusion</h2>
+      <p class="muted">
+        From farm to market — and from <span class="dot local"></span> local shelves to <span class="dot export"></span> global exports —
+        SmartHarvest defines a new standard for intelligent, traceable, and responsible agriculture.
+        By uniting <strong>AI, IoT, and blockchain technologies</strong>, the platform positions Sri Lanka’s agricultural sector
+        at the forefront of <strong>transparent, resilient, and globally competitive food supply chains</strong>.
+      </p>
+    </section>
+
+    <!-- SITE NAVIGATION GRID -->
+    <section class="section">
+      <h2>Site Sections</h2>
+      <div class="grid grid-3">
+        <div class="card"><strong>Vision</strong><div class="muted">Sustainable AI supply chains for local & export.</div><a class="cta" href="vision.html" style="margin-top:8px">Open</a></div>
+        <div class="card"><strong>Mission</strong><div class="muted">Empower farmers, digitize post-harvest, ensure fairness.</div><a class="cta" href="mission.html" style="margin-top:8px">Open</a></div>
+        <div class="card"><strong>Scope</strong><div class="muted">Post-harvest F&amp;V; Sri Lanka reference; scalable.</div><a class="cta" href="scope.html" style="margin-top:8px">Open</a></div>
+        <div class="card"><strong>Objectives</strong><div class="muted">5 core objectives from research.</div><a class="cta" href="objectives.html" style="margin-top:8px">Open</a></div>
+        <div class="card"><strong>Components</strong><div class="muted">4 AI pillars with examples.</div><a class="cta" href="components.html" style="margin-top:8px">Open</a></div>
+        <div class="card"><strong>Process</strong><div class="muted">Farmer → collector → warehouse → QC → market.</div><a class="cta" href="process.html" style="margin-top:8px">Open</a></div>
+        <div class="card"><strong>Trust</strong><div class="muted">Anti-fraud, traceability, responsible AI.</div><a class="cta" href="trust.html" style="margin-top:8px">Open</a></div>
+        <div class="card"><strong>Contact</strong><div class="muted">smartharvest@smartharvest.lk</div><a class="cta" href="contact.html" style="margin-top:8px">Open</a></div>
+        <div class="card"><strong>Team</strong><div class="muted">Researchers, advisors & partners.</div><a class="cta" href="team.html" style="margin-top:8px">Open</a></div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="assets/script.js"></script>
+  <div class="footer">© SmartHarvest — AI for sustainable agriculture · smartharvest@smartharvest.lk</div>
+</body>
+</html>

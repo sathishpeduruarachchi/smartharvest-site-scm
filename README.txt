@@ -1,0 +1,1 @@
+SmartHarvest responsive site with 9 pages. Open index.html.
